@@ -124,4 +124,64 @@ form {
   100% { opacity: 0; transform: translateY(-20px); }
 }
 
+@media (max-width: 768px) {
+  body {
+    gap: 10px;
+    padding: 10px;
+  }
 
+  #Titulo {
+    font-size: 28px;   /* título menor */
+    text-align: center;
+  }
+
+  #Dados {
+    width: 95%;        /* ocupa quase toda a largura da tela */
+    padding: 15px;
+  }
+
+  #EstiloParagrafo {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #valor {
+    width: 100%;       /* campo ocupa toda a largura */
+    font-size: 18px;
+  }
+
+  #mes {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #EnviarValor {
+    width: 100%;       /* botão ocupa toda a largura */
+    font-size: 18px;
+  }
+
+  #fofinha {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+/* Responsividade ainda mais ajustada para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  #Titulo {
+    font-size: 22px;
+  }
+
+  #EstiloParagrafo {
+    font-size: 16px;
+  }
+
+  #Dados {
+    gap: 15px;
+  }
+
+  #EnviarValor {
+    font-size: 16px;
+    height: 35px;
+  }
+}
