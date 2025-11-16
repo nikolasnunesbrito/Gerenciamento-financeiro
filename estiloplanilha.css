@@ -300,3 +300,22 @@ button.remover {
   height: auto;
   width: auto;
 }
+
+@media (max-width: 768px) {
+  #meuheader {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    height: auto;            
+    
+  }
+
+  #btnVoltar,
+  #btnCalc {
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    padding: 10px;
+  }
+}
