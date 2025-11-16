@@ -125,19 +125,15 @@ form {
 }
 
 @media (max-width: 768px) {
-  body {
-    gap: 10px;
-    padding: 10px;
-  }
-
   #Titulo {
-    font-size: 28px;   /* título menor */
+    font-size: 32px;
     text-align: center;
   }
 
   #Dados {
-    width: 95%;        /* ocupa quase toda a largura da tela */
+    width: 90%;          /* ocupa quase toda a tela */
     padding: 15px;
+    gap: 15px;
   }
 
   #EstiloParagrafo {
@@ -145,18 +141,8 @@ form {
     text-align: center;
   }
 
-  #valor {
-    width: 100%;       /* campo ocupa toda a largura */
-    font-size: 18px;
-  }
-
-  #mes {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  #EnviarValor {
-    width: 100%;       /* botão ocupa toda a largura */
+  #valor, #mes, #EnviarValor {
+    width: 100%;         /* inputs e botão ocupam toda a largura */
     font-size: 18px;
   }
 
@@ -166,22 +152,33 @@ form {
   }
 }
 
-/* Responsividade ainda mais ajustada para telas muito pequenas (até 480px) */
+/* Ajuste para celulares pequenos */
 @media (max-width: 480px) {
   #Titulo {
-    font-size: 22px;
+    font-size: 24px;
+  }
+
+  #Dados {
+    width: 95%;          /* ainda menor para caber bem */
+    padding: 10px;
+    gap: 12px;
   }
 
   #EstiloParagrafo {
     font-size: 16px;
   }
 
-  #Dados {
-    gap: 15px;
+  #valor, #mes, #EnviarValor {
+    font-size: 16px;
+    height: 35px;
   }
 
   #EnviarValor {
-    font-size: 16px;
-    height: 35px;
+    margin-top: 5px;
+  }
+
+  #fofinha {
+    width: 150px;
+    height: 200px;
   }
 }
