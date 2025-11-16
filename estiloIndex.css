@@ -135,6 +135,13 @@ form {
     padding: 15px;
     gap: 15px;
   }
+  #EnviarValor {
+    width: 100%;        /* ocupa toda a largura da div pai */
+    max-width: 100%;    /* garante que não ultrapasse */
+    font-size: 18px;
+    height: 40px;
+     margin-top: 5px;
+  }
 
   #EstiloParagrafo {
     font-size: 18px;
@@ -163,6 +170,13 @@ form {
     padding: 10px;
     gap: 12px;
   }
+   #EnviarValor {
+    width: 100%;        /* ocupa toda a largura da div pai */
+    max-width: 100%;    /* garante que não ultrapasse */
+    font-size: 16px;
+    height: 35px;
+     margin-top: 5px;
+  }
 
   #EstiloParagrafo {
     font-size: 16px;
@@ -173,9 +187,7 @@ form {
     height: 35px;
   }
 
-  #EnviarValor {
-    margin-top: 5px;
-  }
+  
 
   #fofinha {
     width: 150px;
