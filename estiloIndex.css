@@ -135,6 +135,9 @@ form {
     padding: 15px;
     gap: 15px;
   }
+   #ConteinerEnviarValor {
+    width: 90%;
+  }
   #EnviarValor {
      width: 90% !important;
     max-width: 90% !important;
@@ -170,6 +173,9 @@ form {
     padding: 10px;
     gap: 12px;
   }
+   #ConteinerEnviarValor {
+    width: 9%;
+   }
    #EnviarValor {
      width: 90% !important;
     max-width: 90% !important; 
