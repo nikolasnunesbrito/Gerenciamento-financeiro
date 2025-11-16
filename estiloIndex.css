@@ -138,8 +138,8 @@ form {
     width: 100%;       /* container se adapta à div pai */
   }
   #EnviarValor {
-     width: 110% !important;
-    max-width: 110% !important;
+     width: 100% !important;
+    max-width: 100% !important;
     font-size: 18px;
     height: 40px;
      margin-top: 5px;
@@ -176,8 +176,8 @@ form {
     width: 100%;       /* container se adapta à div pai */
   }
    #EnviarValor {
-     width: 110% !important;
-    max-width: 110% !important; 
+     width: 100% !important;
+    max-width: 100% !important; 
     font-size: 16px;
     height: 35px;
      margin-top: 5px;
