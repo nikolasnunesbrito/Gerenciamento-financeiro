@@ -1,0 +1,302 @@
+body {
+   margin: 0;
+   padding: 0;
+  background-image: url('Copilot_20251029_232856.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+#Conteineheader{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#btnHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  color: black;
+  background-image:url('Copilot_20251027_235044.png');
+  border-bottom-right-radius: 10px ;
+  border-bottom-left-radius: 10px; ;
+  font-size: 25px;
+}
+#btnVoltar{
+  background-color: #9999991a;
+  border: 0;
+  font-size: 20px;
+  margin-right: 15px;
+  height: auto;
+}
+#btnVoltar:hover{
+  background-color: #ff12c441;
+}
+
+#btnCalc{
+  background-color: #9999991a;
+  border: 0;
+  font-size: 20px;
+   height: auto;
+}
+#btnCalc:hover{
+  background-color: #ff12c441;
+}
+
+header{
+  display: none;
+  height: 70px;
+  width: 25%;
+ background-color: #f88eb5;
+  border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+  flex-direction: row-reverse;
+  gap: 10px ;
+  
+}
+header:hover{
+height:75px;
+  animation: BordaHeader 2s linear infinite;
+  box-shadow: 
+  0px 10px 10px -2px rgb(255, 0, 149),   
+  -10px 0px 10px -2px rgb(255, 39, 165),  
+  10px 0px 10px -2px rgb(255, 39, 165);  
+  border-bottom: 5px solid transparent;
+}
+@keyframes BordaHeader {
+  0% {
+    background-position: 0% bottom;
+  }
+  0% {
+    background-position: 50% bottom;
+  }
+  100% {
+    background-position: 100% bottom;
+  }
+}
+#calculadora {
+  width: 220px;
+  background: #fc8ecb;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-left: 20px;
+  position: absolute;
+  top: 200px;        
+  right: 20px;        
+}
+
+#calcDisplay {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: right;
+  padding: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background: #fff;
+}
+
+#calcBotoes button {
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#calcBotoes button:hover {
+  background: #bbb;
+}
+
+#igual {
+  background: #4CAF50;
+  color: rgb(0, 0, 0);
+}
+
+#limpar {
+  background: #f44336;
+  color: rgb(0, 0, 0);
+}
+
+
+#MesEscolhido {
+  font-size: 120px;
+  line-height: 1.1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  margin: 0;
+  background-image: url('Copilot_20251029_232427.png');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+section:hover{
+  animation: BordaNeon 2s linear infinite;
+  box-shadow: 10px 10px 10px -2px rgb(255, 0, 149);
+  border-bottom: 5px solid transparent;
+}
+@keyframes BordaNeon {
+  0% {
+    background-position: 0% bottom;
+  }
+  0% {
+    background-position: 50% bottom;
+  }
+  100% {
+    background-position: 100% bottom;
+  }
+}
+.inputDestino,
+.campoDestino {
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px; /* aumenta a largura máxima */
+  box-sizing: border-box;
+}
+#graficoContainer {
+  width: 300px;
+  margin: 0 auto 20px;
+}
+
+#mensagemSaldo {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#erroSaldo {
+  display: none;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.categoria {
+  background-color: #ffc0cb;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.categoria h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #b03060;
+}
+
+.novoGasto {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.novoGasto input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.novoGasto button {
+  padding: 10px 16px;
+  font-size: 18px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+
+}
+
+.valorGasto {
+  font-size: 18px;
+  padding: 6px;
+  width: 100%;
+}
+
+button.confirmar {
+  background-color: #eee;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button.confirmar.ativo {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.remover {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+}
+.valorGasto {
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.ANIMAÇAO{
+  
+  display: flex;
+  flex-direction: row;
+}
+#fofinha {
+    
+  width:200px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+.painel{
+  width: auto;
+}
+#imagemdireita{
+  height: auto;
+  width: auto;
+}

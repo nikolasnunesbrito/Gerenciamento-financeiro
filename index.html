@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloIndex.css">
+    <script src="https://unpkg.com/imask"></script>
+    <script src="scriptIndex.js"></script>
+    <title>FinanceiroFácil</title>
+</head>
+
+<body>
+    
+  
+    <h1 id="Titulo">Gerencie seu dinheiro com Responsabilidade</h1>
+      
+    <form action="planilha.html" method="GET">
+  <div id="Dados">
+    <p id="EstiloParagrafo">
+      Antes de começar preciso saber qual é o valor mensal que vamos nos basear para gerenciar seu dinheiro e qual é o mês que vamos gerenciar
+    </p>
+
+    <div id="Escolhas">
+      <label class="label">Valor Mensal que vamos gerenciar</label>
+      <input id="valor" name="valor" placeholder="R$0,00"  autocomplete="off">
+    </div>
+
+    <div id="Escolhas">
+      <label class="label" for="mes">Escolha o mês:</label>
+    <select id="mes" name="mes" >
+       <option value="Selecione">Selecione</option>
+  <option value="Janeiro">Janeiro</option>
+  <option value="Fevereiro">Fevereiro</option>
+  <option value="Março">Março</option>
+  <option value="Abril">Abril</option>
+  <option value="Maio">Maio</option>
+  <option value="Junho">Junho</option>
+  <option value="Julho">Julho</option>
+  <option value="Agosto">Agosto</option>
+  <option value="Setembro">Setembro</option>
+  <option value="Outubro">Outubro</option>
+  <option value="Novembro">Novembro</option>
+  <option value="Dezembro">Dezembro</option>
+</select>
+    </div>
+    <div id="ConteinerEnviarValor">
+    <button type="submit" id="EnviarValor">Enviar</button>
+</div>
+   <div id="mensagem" class="mensagem-box">
+</div>
+    </div>
+</form>
+  <div id="fofinha"></div>
+</body>
+</html>

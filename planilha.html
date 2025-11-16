@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Financeiro</title>
+  <link rel="stylesheet" href="estiloplanilha.css">
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scriptPlanilha.js" defer></script>
+</head>
+<body>
+  <div id="Conteineheader">
+  <header id="meuheader">
+<button id="btnVoltar" onclick="window.location.href='index.html'">Início</button>
+     <button id="btnCalc">Calculadora</button>
+  </header>
+ <button id="btnHeader"> 🢃 </button>
+</div>
+  <h1 id="MesEscolhido"></h1>
+
+  <div id="graficoContainer">
+    <canvas id="graficoSaldo" width="200" height="200"></canvas>
+    <div id="mensagemSaldo">Saldo insuficiente!</div>
+  </div>
+
+  <div id="erroSaldo">Saldo insuficiente para esse gasto!</div>
+
+ 
+  <div class="painel">
+    <section class="categoria" data-categoria="fixos">
+      <h2>Gastos Fixos</h2>
+      <div class="novoGasto">
+        <input type="text" placeholder="Destino" class="inputDestino">
+        <input type="text" class="inputValor" placeholder="Valor">
+        <button class="adicionarGasto">Adicionar</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Apagar</th>
+            <th>Destino</th>
+            <th>Valor</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+     </div>
+    <div class="painel">
+    <section class="categoria" data-categoria="variaveis">
+      <h2>Gastos Variáveis</h2>
+      <div class="novoGasto">
+        <input type="text" placeholder="Destino" class="inputDestino">
+        <input type="text" placeholder="Valor" class="inputValor">
+        <button class="adicionarGasto">Adicionar</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Apagar</th>
+            <th>Destino</th>
+            <th>Valor</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+     </div>
+    <div class="painel">
+    <section class="categoria" data-categoria="investimentos">
+      <h2>Investimentos</h2>
+      <div class="novoGasto">
+        <input type="text" placeholder="Destino" class="inputDestino">
+        <input type="text" placeholder="Valor" class="inputValor">
+        <button class="adicionarGasto">Adicionar</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Apagar</th>
+            <th>Destino</th>
+            <th>Valor</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    </div>
+    <div class="painel">
+    <section class="categoria" data-categoria="diversao">
+      <h2>Diversão</h2>
+      <div class="novoGasto">
+        <input type="text" placeholder="Destino" class="inputDestino">
+        <input type="text" placeholder="Valor" class="inputValor">
+        <button class="adicionarGasto">Adicionar</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Apagar</th>
+            <th>Destino</th>
+            <th>Valor</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+  
+</body>
+</html>
