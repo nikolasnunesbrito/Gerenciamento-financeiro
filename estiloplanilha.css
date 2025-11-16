@@ -303,7 +303,7 @@ button.remover {
 
 @media (max-width: 768px) {
   #Conteineheader {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -330,14 +330,14 @@ button.remover {
   }
 
   #btnHeader {
-    font-size: 28px;        /* aumenta o símbolo 🢃 */
+    font-size: 18px;        /* aumenta o símbolo 🢃 */
     padding: 12px 20px;
   }
 }
 
 @media (max-width: 480px) {
   header {
-    width: 100%;            /* ocupa toda a largura */
+    width: auto;            /* ocupa toda a largura */
     height: auto;           /* cresce conforme o conteúdo */
     padding: 20px;
     gap: 12px;
