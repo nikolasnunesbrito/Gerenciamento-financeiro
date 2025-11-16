@@ -304,18 +304,20 @@ button.remover {
 @media (max-width: 768px) {
   #Conteineheader {
     width: 100%;
-    height: auto;
+    height: auto;              /* deixa o container crescer */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
   }
 
   #meuheader {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column;    /* empilha os botões */
     align-items: center;
-    height: auto;
     gap: 10px;
     padding: 15px;
+    height: auto;              /* header cresce conforme conteúdo */
   }
 
   #btnVoltar,
@@ -324,5 +326,30 @@ button.remover {
     max-width: 300px;
     font-size: 18px;
     padding: 10px;
+  }
+
+  #btnHeader {
+    font-size: 28px;           /* aumenta um pouco o símbolo 🢃 */
+    padding: 12px 20px;        /* mais espaço para toque */
+  }
+}
+
+/* Ajuste para celulares pequenos */
+@media (max-width: 480px) {
+  #meuheader {
+    gap: 12px;
+    padding: 20px;
+  }
+
+  #btnVoltar,
+  #btnCalc {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  #btnHeader {
+    font-size: 32px;           /* símbolo maior ainda em telas pequenas */
+    padding: 14px 24px;
   }
 }
