@@ -303,20 +303,14 @@ button.remover {
 
 @media (max-width: 768px) {
   #Conteineheader {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    width: 100%;   /* ocupa toda a largura da tela */
   }
 
   header {
-    display: flex;          /* mostra o header */
-    flex-direction: column; /* empilha os botões */
+    width: 100%;   /* header também ocupa toda a largura */
+    height: auto;  /* cresce conforme o conteúdo */
+    flex-direction: column;
     align-items: center;
-    width: 100%;            /* ocupa toda a largura da tela */
-    height: auto;           /* cresce conforme o conteúdo */
     padding: 15px;
     gap: 10px;
   }
@@ -330,15 +324,19 @@ button.remover {
   }
 
   #btnHeader {
-    font-size: 18px;        /* aumenta o símbolo 🢃 */
+    font-size: 28px;   /* aumenta o símbolo 🢃 */
     padding: 12px 20px;
   }
 }
 
 @media (max-width: 480px) {
+  #Conteineheader {
+    width: 100%;
+  }
+
   header {
-    width: auto;            /* ocupa toda a largura */
-    height: auto;           /* cresce conforme o conteúdo */
+    width: 100%;
+    height: auto;
     padding: 20px;
     gap: 12px;
   }
@@ -351,7 +349,7 @@ button.remover {
   }
 
   #btnHeader {
-    font-size: 32px;        /* símbolo maior ainda */
+    font-size: 32px;   /* símbolo maior ainda */
     padding: 14px 24px;
   }
 }
